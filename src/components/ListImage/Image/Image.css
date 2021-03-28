@@ -1,0 +1,27 @@
+.item-img {
+  width: 14vw;
+  height: 14vw;
+  margin-bottom: 2rem;
+
+  position: relative;
+}
+
+.item-img:hover .heart-img {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.heart-img {
+  position: absolute;
+  color: #ff000091;
+  font-size: 2rem;
+  right: 1.5rem;
+  bottom: 1rem;
+  opacity: 0;
+  transition: all linear 0.5s;
+}
+
+.favorited-img {
+  color: red;
+  opacity: 1;
+}

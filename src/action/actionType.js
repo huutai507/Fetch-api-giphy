@@ -1,0 +1,2 @@
+export const ADD_LIST_IMAGE = "ADD_LIST_IMAGE";
+export const ADD_FAVOURITED = "ADD_FAVOURITED";
