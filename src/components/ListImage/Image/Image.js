@@ -1,7 +1,6 @@
 import React from "react";
 import "./Image.css";
 import classnames from "classnames";
-import listImage from "../../../reducer/listImage";
 
 function Image({ id, url, handleClickFavourited, listFavourited }) {
   return (

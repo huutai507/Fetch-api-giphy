@@ -1,20 +1,24 @@
 import React from "react";
 import "./Header.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Header({ listFavourited }) {
   return (
     <header className="header">
       <nav className="header__menu">
         <ul className="header__menu-list">
+          <Link to="/">
+            <li className="header__menu-item">
+              Galler<b>easy</b>
+            </li>
+          </Link>
           <li className="header__menu-item">
-            Galler<b>easy</b>
+            <Link to="/">
+              <b>Search</b>
+            </Link>
           </li>
           <li className="header__menu-item">
-            <b>Search</b>
-          </li>
-          <li className="header__menu-item">
-            Favourites ({listFavourited.length})
+            <Link to="/favourited">Favourites ({listFavourited.length})</Link>
           </li>
         </ul>
       </nav>

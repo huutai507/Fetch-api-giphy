@@ -33,3 +33,30 @@ li:hover {
 ::placeholder {
   font-size: 2rem;
 }
+
+a {
+  text-decoration: none;
+  color: #444;
+}
+
+@media only screen and (max-width: 1023px) {
+  .content-img {
+    justify-content: space-around !important;
+    width: 100% !important;
+    margin: 0 1rem !important;
+  }
+
+  .item-img {
+    width: calc(24vw - 1rem) !important;
+    height: calc(24vw - 1rem) !important;
+  }
+
+  .menu__footer-list {
+    padding: 0.5rem 1rem;
+    font-size: 1.6rem;
+  }
+
+  ::placeholder {
+    font-size: 1.5rem;
+  }
+}

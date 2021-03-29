@@ -1,3 +1,7 @@
+.listImage {
+  margin-top: 2rem;
+}
+
 .listImage__input {
   margin: 2rem 0;
   display: flex;
@@ -24,4 +28,35 @@
   margin: 0 auto;
   width: 60%;
   flex-wrap: wrap;
+}
+
+.btn-search {
+  width: 6rem;
+  height: 3rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.listImage__pagination {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  width: 25%;
+  cursor: pointer;
+  height: 4rem;
+}
+
+.pagination-hidden {
+  display: none;
+}
+
+.pagination-left {
+  display: none;
+}
+
+.pagination-right {
+  display: none;
 }

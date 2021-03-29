@@ -1,13 +1,22 @@
 import { ADD_LIST_IMAGE, ADD_FAVOURITED } from "../action/actionType";
 
-const initialStore = { content: [], listFavourited: [] };
+const getYourFavourited = localStorage.getItem("listFavourited");
+
+const initialStore = {};
+if (JSON.parse(getYourFavourited) === null) {
+  initialStore.content = [];
+  initialStore.listFavourited = [];
+} else {
+  initialStore.content = [];
+  initialStore.listFavourited = JSON.parse(getYourFavourited);
+}
 
 export default function (state = initialStore, action) {
   switch (action.type) {
     case ADD_LIST_IMAGE: {
       return {
         ...state,
-        content: action.payload.content.data
+        content: action.payload.content
       };
     }
     case ADD_FAVOURITED: {
